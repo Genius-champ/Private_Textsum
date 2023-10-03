@@ -9,7 +9,7 @@ from langchain.chat_models import ChatOpenAI
 #openai.api_key = os.environ["OPENAI_API_KEY"]
 from config import OPENAI_API_KEY
 #openai.api_key = os.environ["OPENAI_API_KEY"]
-
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
 
 @st.cache_data
 def setup_documents(pdf_file_path, chunk_size, chunk_overlap):
